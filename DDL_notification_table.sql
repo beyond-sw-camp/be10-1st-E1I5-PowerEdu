@@ -1,10 +1,11 @@
-INSERT INTO LECTURE
- VALUES
-(NULL, 1, '입문자바', '이것은 입문자바에 대한 강의입니다.', 100, '하', 10000, 0),
-(NULL, 4, '기본자바', '이것은 기본자바에 대한 강의입니다.', 300, '중', 23000, 0),
-(NULL, 6, '심화자바', '이것은 심화자바에 대한 강의입니다.', 500, '상', 47000, 0),
-(NULL, 8, '입문파이썬', '이것은 입문파이썬에 대한 강의입니다.', 120, '하', 15000, 0),
-(NULL, 10, '기본파이썬', '이것은 기본파이썬에 대한 강의입니다.', 370, '중', 37000, 0),
-(NULL, 13, '심화파이썬', '이것은 심화파이썬에 대한 강의입니다.', 480, '상', 52000, 0),
-(NULL, 15, '입문c++', '이것은 입문c++에 대한 강의입니다.', 150, '하', 18000, 0),
-(NULL, 17, '기본c++', '이것은 기본c++에 대한 강의입니다.', 390, '중', 34000, 0);
+CREATE TABLE IF NOT EXISTS `NOTIFICATION`
+(
+    `NOTIF_ID`    INT NOT NULL AUTO_INCREMENT COMMENT '알림ID',
+    `USER_ID`    INT NOT NULL COMMENT '사용자ID',
+    `NOTIF_TYPE`    CHAR NOT NULL COMMENT '알림타입',
+    CHECK(NOTIF_TYPE IN ('N', 'W', 'C', 'Q')),
+    `IS_READ`    BOOLEAN DEFAULT '0'  NOT NULL COMMENT '알림상태',
+    `NOTIF_CONTENT`    LONGTEXT NOT NULL COMMENT '알림내용',
+    PRIMARY KEY (`NOTIF_ID`),
+    FOREIGN KEY (`USER_ID`) REFERENCES `USER` (`USER_ID`)
+) COMMENT = '알림';
