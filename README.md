@@ -5,11 +5,11 @@
 > **★** `PowerEdu`는 경제적 부담을 줄이고, 유연한 학습을 통해 학습을 더 효율적으로 관리할 수 있는 **혁신적인 플랫폼**입니다.
 
 ## 팀원 구성
-<img src="./img/E1I5-logo.png" width="300" height="350">
+<img src="./img/E1I5-logo.png" width="400" height="400">
 
-| **[이은서](https://github.com/eunseo-76)** | **[김태영](https://github.com/wildcat222)** | **[오진석](https://github.com/jinskore)** | **[김지민](https://githu4b.com/kimjm9911)** | **[임광택](https://github.com/Pangtaek)** | **[임채륜](https://github.com/PBEM22)** |
+| **[이은서](https://github.com/eunseo-76)** | **[김태영](https://github.com/wildcat222)** | **[오진석](https://github.com/jinskore)** | **[김지민](https://github.com/kimjm9911)** | **[임광택](https://github.com/Pangtaek)** | **[임채륜](https://github.com/PBEM22)** |
 |----|----|----|----|----|----|
-|<img src="./img/eun.png" width="45">|<img src="./img/hyung.png" width="45">|<img src="./img/jin.png" width="45">|<img src="./img/min.png" width="45">|<img src="./img/kwang.png" width="45">|<img src="./img/chae.png" width="45">|
+|<a href="https://github.com/eunseo-76"><img src="./img/eun.png" width="45"></a>|<a href="https://github.com/wildcat222"><img src="./img/hyung.png" width="45"></a>|<a href="https://github.com/jinskore"><img src="./img/jin.png" width="45"></a>|<a href="https://github.com/kimjm9911"><img src="./img/min.png" width="45"></a>|<a href="https://github.com/Pangtaek"><img src="./img/kwang.png" width="45"></a>|<a href="https://github.com/PBEM22"><img src="./img/chae.png" width="45"></a>|
 
 ## 컨벤션
 
@@ -106,41 +106,131 @@ chore: (수정사항)
 
 <br>
 
+
+## WBS
+
+![WBS](./img/wbs.png)
+
+<br>
+
 ## 프로젝트 설계
-[요구사항 명세서, 테이블 정의서](https://docs.google.com/spreadsheets/d/1ATtKtcj3g4Hs6ygaoo-ZxcEexlLmGTE5gwCmK3xPfM4/edit?usp=sharing)
+[요구사항 명세서 | 테이블 정의서 | WBS | 테스트 결과서](https://docs.google.com/spreadsheets/d/1ATtKtcj3g4Hs6ygaoo-ZxcEexlLmGTE5gwCmK3xPfM4/edit?usp=sharing)
 []()
 
 <br>
 
+## 기능적-비기능적 요구사항
+
+### 1. 기능적 요구사항
+
+- **회원 관리**:
+    - 사용자는 회원 가입을 통해 시스템에 등록할 수 있어야 합니다.
+    - 사용자는 이메일과 비밀번호를 통해 시스템에 로그인할 수 있어야 합니다.
+    - 사용자는 자신의 프로필 정보를 관리할 수 있어야 합니다.
+    - 사용자는 회원 탈퇴가 가능하다.
+- **강의 관리**:
+    - 강사는 새로운 강의를 생성, 수정, 삭제할 수 있어야 합니다.
+    - 강사는 강의 자료를 업로드하고, 학생은 이를 열람할 수 있어야 합니다.
+    - 학생은 강의 목록을 조회하고, 검색할 수 있으며 이를 구매하고 신청할 수 있어야 합니다.
+- **게시판**:
+    - 학생은 질문을 작성하고, 답변을 작성할 수 있어야 합니다.
+    - 강사는 질문에 답변하고, 질문을 관리할 수 있어야 합니다.
+- **알림 및 공지**:
+    - 관리자는 공지를 작성, 수정, 삭제할 수 있어야 합니다.
+    - 학생과 강사는 공지를 조회하고, 알림을 수신할 수 있어야 합니다.
+- **사용자 관리**:
+    - 관리자는 사용자 권한을 설정할 수 있어야 합니다.(강사에게 권한 부여 설정)
+    - 학생의 마지막 로그인 날짜가 6개월이 넘는 경우 휴면 계정으로 전환한다.
+    - 강사가 회원 탈퇴 시 강사 권한을 회수한다.
+
+### 2. 비기능적 요구사항
+
+- **성능**: 시스템은 다수의 사용자가 동시에 접속하더라도 원활하게 작동해야 합니다.
+- **보안**: 사용자 데이터는 암호화되어 안전하게 저장되어야 하며, 인증 및 권한 부여 절차가 필요합니다.
+- **유지보수성**: 시스템은 유지보수가 용이하게 설계되어야 하며, 새로운 기능 추가가 쉬워야 합니다.
+- **사용성**: 사용자 인터페이스는 직관적이고 사용하기 쉬워야 합니다.
+- **호환성**: 시스템은 다양한 디바이스(PC, 스마트폰, 태블릿)에서 원활하게 동작해야 합니다.
+
+<br>
+
 ## 유스케이스
+
 ![alt text](./img/PowerEdu_2.png)
+
 
 <br>
 
 ## ERD테이블
+
 ![alt text](./img/erdCloud.png)
 
+
 <br>
 
-### 게시글 및 댓글 관련 파트
+### 
+<details>
+<summary><Strong>게시글 및 댓글 관련 파트</Strong></summary>
+<div markdown="1">
+
 ![alt text](./img/post.png)
 
-<br>
+</div>
+</details>
 
-### 스터디그룹
+### 
+<details>
+<summary><Strong>스터디그룹</Strong></summary>
+<div markdown="1">
+
 ![alt text](./img/studyGroup.png)
 
-### 알림
+</div>
+</details>
+
+
+### 
+<details>
+<summary><Strong>알림</Strong></summary>
+<div markdown="1">
+
 ![alt text](./img/notice.png)
 
-### 사용자
+</div>
+</details>
+
+
+### 
+<details>
+<summary><Strong>사용자</Strong></summary>
+<div markdown="1">
+
 ![alt text](./img/user.png)
 
-### 결제 내역, 구매 및 대여 목록
+</div>
+</details>
+
+
+### 
+<details>
+<summary><Strong>결제 내역, 구매 및 대여 목록</Strong></summary>
+<div markdown="1">
+
 ![alt text](./img/buyList.png)
 
-### 강의 관련
+</div>
+</details>
+
+
+### 
+<details>
+<summary><Strong>강의 관련</Strong></summary>
+<div markdown="1">
+
 ![alt text](./img/lecture.png)
+
+</div>
+</details>
+
 
 ## 개발환경
 `MariaDB` `Ubuntu` `Linux` 
@@ -156,11 +246,18 @@ chore: (수정사항)
 <br>
 <br>
 
-
+<details>
+<summary><Strong>구현 결과</Strong></summary>
+<div markdown="1">
 
 ![백업계획1](./img/BackUpDB.png)
 
 ![백업계획2](./img/BackUpDB2.png)
+
+</div>
+</details>
+
+
 
 <br>
 
